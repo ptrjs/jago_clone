@@ -27,7 +27,7 @@ class HomeController extends State<HomeView> {
 
   void onScroll() {
     double offset = scrollController.offset;
-    print("Scroll offset: $offset");
+
     isScrolled = offset > 5;
     if (offset == 0) {
       isScrolled = false;

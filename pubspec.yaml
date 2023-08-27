@@ -39,6 +39,7 @@ dependencies:
   dio: ^5.3.2
   google_fonts: ^5.1.0
   material_design_icons_flutter: ^7.0.7296
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:

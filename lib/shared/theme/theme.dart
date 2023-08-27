@@ -11,7 +11,7 @@ ThemeData getDefaultTheme() {
     appBarTheme: AppBarTheme(
       backgroundColor: primaryColor,
       elevation: 0.6,
-      titleTextStyle: GoogleFonts.lato(
+      titleTextStyle: GoogleFonts.inter(
         color: Colors.blueGrey[700],
         fontWeight: FontWeight.bold,
       ),
@@ -28,22 +28,22 @@ ThemeData getDefaultTheme() {
       labelColor: Colors.blueGrey[900]!,
     ),
     textTheme: TextTheme(
-      titleSmall: GoogleFonts.lato(
+      titleSmall: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
-      titleMedium: GoogleFonts.lato(
+      titleMedium: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
-      titleLarge: GoogleFonts.lato(
+      titleLarge: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
-      bodyLarge: GoogleFonts.lato(
+      bodyLarge: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
-      bodySmall: GoogleFonts.lato(
+      bodySmall: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
-      bodyMedium: GoogleFonts.lato(
+      bodyMedium: GoogleFonts.inter(
         color: Colors.blueGrey[900],
       ),
     ),
