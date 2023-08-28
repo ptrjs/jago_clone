@@ -272,6 +272,11 @@ class HomeView extends StatefulWidget {
                                 "https://cdn-icons-png.flaticon.com/128/2953/2953423.png",
                             title: "Main Pocket",
                             desc: "Rp10.000",
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MainPocketView()),
+                            ),
                           ),
                           const SizedBox(
                             width: 8.0,

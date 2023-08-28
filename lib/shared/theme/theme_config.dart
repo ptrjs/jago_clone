@@ -5,6 +5,7 @@ var secondaryColor = const Color(0xffa605ad);
 var backgroundColor = const Color(0xfff9f9f9);
 var borderGreyColor = const Color(0xffe6e6e6);
 var backgroundYellowColor = const Color(0xffffefd4);
+var backgroundCreamColor = const Color(0xfff7f7ee);
 var textColor = const Color(0xff010F07);
 var disabledTextColor = const Color(0xff959595);
 var scaffoldBackgroundColor = const Color(0x00ffffff);

@@ -12,11 +12,11 @@ ThemeData getDefaultTheme() {
       backgroundColor: primaryColor,
       elevation: 0.6,
       titleTextStyle: GoogleFonts.inter(
-        color: Colors.blueGrey[700],
+        color: Colors.blueGrey[900],
         fontWeight: FontWeight.bold,
       ),
       iconTheme: IconThemeData(
-        color: Colors.blueGrey[700],
+        color: Colors.blueGrey[900],
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(

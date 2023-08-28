@@ -3,7 +3,9 @@
         "main_navigation",
         "home",
         "pocket",
-        "other"
+        "other",
+        "main_pocket",
+        "profile"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
