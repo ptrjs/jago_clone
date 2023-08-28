@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jago_clone/core.dart';
-import 'package:jago_clone/module/home/widget/home_menu_shortcut.dart';
-import 'package:jago_clone/module/home/widget/home_search.dart';
-import 'package:jago_clone/shared/theme/theme_config.dart';
-import '../controller/home_controller.dart';
-import '../widget/home_carousel.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -53,10 +48,16 @@ class HomeView extends StatefulWidget {
             padding: const EdgeInsets.fromLTRB(12, 12, 24, 0),
             child: Row(
               children: [
-                Icon(
-                  Icons.person,
-                  size: controller.isScrolled ? 20.0 : 24.0,
-                  color: Colors.black,
+                InkWell(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProfileView()),
+                  ),
+                  child: Icon(
+                    Icons.person,
+                    size: controller.isScrolled ? 20.0 : 24.0,
+                    color: Colors.black,
+                  ),
                 ),
                 const SizedBox(
                   width: 24.0,
@@ -243,14 +244,14 @@ class HomeView extends StatefulWidget {
                   padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
                   child: Column(
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           HomeMenuShortcut(
                             imageUrl:
                                 "https://cdn-icons-png.flaticon.com/128/1287/1287558.png",
                             title: "Pay with QR",
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 8.0,
                           ),
                           HomeMenuShortcut(
@@ -275,13 +276,13 @@ class HomeView extends StatefulWidget {
                             onTap: () => Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => MainPocketView()),
+                                  builder: (context) => const MainPocketView()),
                             ),
                           ),
                           const SizedBox(
                             width: 8.0,
                           ),
-                          HomeMenuShortcut(
+                          const HomeMenuShortcut(
                             imageUrl:
                                 "https://cdn-icons-png.flaticon.com/128/625/625599.png",
                             title: "Transfer & Pay",
@@ -291,14 +292,14 @@ class HomeView extends StatefulWidget {
                       const SizedBox(
                         height: 8.0,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           HomeMenuShortcut(
                             imageUrl:
                                 "https://cdn-icons-png.flaticon.com/128/3135/3135706.png",
                             title: "Charge Money",
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 8.0,
                           ),
                           HomeMenuShortcut(
@@ -312,14 +313,14 @@ class HomeView extends StatefulWidget {
                       const SizedBox(
                         height: 8.0,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           HomeMenuShortcut(
                             imageUrl:
                                 "https://cdn-icons-png.flaticon.com/128/951/951764.png",
                             title: "Pay Bills",
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 8.0,
                           ),
                           HomeMenuShortcut(
@@ -348,7 +349,7 @@ class HomeView extends StatefulWidget {
                           width: 180,
                           decoration: BoxDecoration(
                             color: Colors.orange[200],
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(
                                 8.0,
                               ),
@@ -366,7 +367,7 @@ class HomeView extends StatefulWidget {
                               const SizedBox(
                                 height: 4.0,
                               ),
-                              Text(
+                              const Text(
                                 "Add Shortcut",
                                 style: TextStyle(
                                   fontSize: 20.0,

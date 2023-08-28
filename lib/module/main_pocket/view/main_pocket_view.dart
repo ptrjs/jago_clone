@@ -1,9 +1,6 @@
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:jago_clone/core.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import '../controller/main_pocket_controller.dart';
 
 class MainPocketView extends StatefulWidget {
   const MainPocketView({Key? key}) : super(key: key);
@@ -18,10 +15,10 @@ class MainPocketView extends StatefulWidget {
           "Pocket Details",
         ),
         backgroundColor: backgroundCreamColor,
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: const Icon(
+            padding: EdgeInsets.symmetric(horizontal: 12.0),
+            child: Icon(
               Icons.more_horiz_outlined,
               size: 24.0,
             ),
@@ -105,7 +102,7 @@ class MainPocketView extends StatefulWidget {
                             const SizedBox(
                               height: 4.0,
                             ),
-                            Text(
+                            const Text(
                               "Add Money",
                               style: TextStyle(
                                 fontSize: 12.0,
@@ -126,7 +123,7 @@ class MainPocketView extends StatefulWidget {
                             const SizedBox(
                               height: 4.0,
                             ),
-                            Text(
+                            const Text(
                               "Move Money",
                               style: TextStyle(
                                 fontSize: 12.0,
@@ -147,7 +144,7 @@ class MainPocketView extends StatefulWidget {
                             const SizedBox(
                               height: 4.0,
                             ),
-                            Text(
+                            const Text(
                               "Transfer & Pay",
                               style: TextStyle(
                                 fontSize: 12.0,
@@ -166,7 +163,7 @@ class MainPocketView extends StatefulWidget {
                     height: 100.0,
                     decoration: BoxDecoration(
                       color: backgroundColor,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Color(0x19000000),
                           blurRadius: 24,
@@ -176,7 +173,7 @@ class MainPocketView extends StatefulWidget {
                       border: Border.all(
                         color: borderGreyColor,
                       ),
-                      borderRadius: BorderRadius.all(
+                      borderRadius: const BorderRadius.all(
                         Radius.circular(
                           8.0,
                         ),
@@ -195,15 +192,15 @@ class MainPocketView extends StatefulWidget {
                           const SizedBox(
                             width: 20.0,
                           ),
-                          Text(
+                          const Text(
                             "Connect to card",
                             style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Spacer(),
-                          Icon(
+                          const Spacer(),
+                          const Icon(
                             Icons.link,
                             size: 24.0,
                           ),
@@ -246,7 +243,7 @@ class MainPocketView extends StatefulWidget {
                             child: Row(
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
                                   child: Icon(
                                     Icons.search,
                                     color: disabledTextColor,
@@ -276,7 +273,7 @@ class MainPocketView extends StatefulWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.sort,
                               size: 24.0,
                             ),
@@ -308,7 +305,7 @@ class MainPocketView extends StatefulWidget {
                               fontWeight: FontWeight.bold,
                               color: disabledTextColor),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text(
                           "Updated today, 22.49",
                           style: TextStyle(
@@ -371,8 +368,8 @@ class MainPocketView extends StatefulWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
-                        Row(
+                        const Spacer(),
+                        const Row(
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
@@ -385,7 +382,7 @@ class MainPocketView extends StatefulWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   height: 4.0,
                                 ),
                                 Text(
@@ -450,7 +447,7 @@ class MainPocketView extends StatefulWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Row(
                           children: [
                             Column(
@@ -468,7 +465,7 @@ class MainPocketView extends StatefulWidget {
                                 const SizedBox(
                                   height: 4.0,
                                 ),
-                                Text(
+                                const Text(
                                   "Interest",
                                   style: TextStyle(
                                     fontSize: 12.0,
@@ -495,7 +492,7 @@ class MainPocketView extends StatefulWidget {
                               fontWeight: FontWeight.bold,
                               color: disabledTextColor),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text(
                           "",
                           style: TextStyle(
@@ -558,8 +555,8 @@ class MainPocketView extends StatefulWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
-                        Row(
+                        const Spacer(),
+                        const Row(
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
@@ -572,7 +569,7 @@ class MainPocketView extends StatefulWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   height: 4.0,
                                 ),
                                 Text(
@@ -637,7 +634,7 @@ class MainPocketView extends StatefulWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Row(
                           children: [
                             Column(
@@ -655,7 +652,7 @@ class MainPocketView extends StatefulWidget {
                                 const SizedBox(
                                   height: 4.0,
                                 ),
-                                Text(
+                                const Text(
                                   "Interest",
                                   style: TextStyle(
                                     fontSize: 12.0,

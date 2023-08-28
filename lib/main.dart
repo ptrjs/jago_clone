@@ -1,7 +1,6 @@
 import 'package:jago_clone/core.dart';
 
 import 'package:flutter/material.dart';
-import 'package:jago_clone/shared/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());

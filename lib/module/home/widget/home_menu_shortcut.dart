@@ -31,7 +31,7 @@ class HomeMenuShortcut extends StatelessWidget {
               height: 125,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
+                borderRadius: const BorderRadius.all(
                   Radius.circular(12.0),
                 ),
                 color: Colors.white,
@@ -58,7 +58,7 @@ class HomeMenuShortcut extends StatelessWidget {
                         ),
                         Text(
                           title,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -91,7 +91,7 @@ class HomeMenuShortcut extends StatelessWidget {
               right: 12,
               child: Text(
                 newInfo!,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.red,
                   fontWeight: FontWeight.bold,
                 ),
